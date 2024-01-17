@@ -14,9 +14,6 @@ html{
 .clear{
     clear: both;
 }
-.main{
-
-}
 
 .header{
     height: 46px;
@@ -78,7 +75,7 @@ html{
 
 .nav .subnav a{
     color: #000;
-    padding: 0 12px;v
+    padding: 0 12px;
     line-height: 38px;
     min-width: 160px;
 }
@@ -87,9 +84,9 @@ html{
     display: inline-block;
     color: #fff;
     float: right;
-    padding: 0 24px;
+    padding: 0 21px;
     line-height: 46px;
-    font-size: ;
+    font-size: 20px;
 }
 .search-btn:hover{
     background-color: #f44336;
@@ -116,9 +113,6 @@ html{
 }
 .slider .text-content .text-description{
     font-size: 15px;
-}
-.content{
-
 }
 
 .content-section{
@@ -250,6 +244,75 @@ html{
     background-color: #ccc;
 
 }
-.footer{
 
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0, 0.3);
+}
+
+.modal-container {
+    background-color: #fff;
+    width: 600px;
+    min-height: 200px;
+    position: relative;
+}
+
+.modal-header {
+    background-color: #009688;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+}
+.modal-header-icon{
+    margin-right: 16px;
+}
+.modal .modal-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 12px;
+    cursor: pointer;
+}
+.modal .modal-close:hover{
+    opacity: 1;
+}
+.modal .modal-content{
+    padding: 16px;
+
+}
+.modal-label{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+.modal-input{
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 24px;
+
+}
+.modal-button{
+    background-color:#009688;
+    border: none;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 18px;
+    
+}
+..modal-button:hover{
+    opacity: 0.9;
+    cursor: pointer;
 }
