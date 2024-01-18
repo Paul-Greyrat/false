@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assests/style.css">
     <link rel="stylesheet" href="./assests/icon/fontawesome-free-6.5.1-web/fontawesome-free-6.5.1-web/css/all.css">
+    <link rel="stylesheet" href="./assests/stylefail.css">
     <title>The Band</title>
 </head>
 <body>
@@ -83,7 +84,7 @@
                                 <p class="place-desc">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <a href="#" class="place-buy-btn">Buy Tickets</a>
+                                <button class="place-buy-btn js-buy-btn">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="place-item">
@@ -96,7 +97,7 @@
                                 <p class="place-desc">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <a href="#" class="place-buy-btn">Buy Tickets</a>
+                                <button class="place-buy-btn js-buy-btn">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="place-item">
@@ -109,7 +110,7 @@
                                 <p class="place-desc">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <a href="#" class="place-buy-btn">Buy Tickets</a>
+                                <button class="place-buy-btn js-buy-btn">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="clear"></div>
@@ -126,9 +127,9 @@
         </div>
         <div class="footer">
         </div>     
-        <div class="modal">
-            <div class="modal-container">
-                <div class="modal-close">
+        <div class="modal js-modal">
+            <div class="modal-container js-modal-container">
+                <div class="modal-close js-close-ticket">
                     <i class="fa-solid fa-xmark"></i>
                 </div>
                 <header class="modal-header">
@@ -136,16 +137,16 @@
                     Tickets
                 </header>
                 <div class="modal-content">
-                    <label for="" class="modal-label">
+                    <label for="tickets-modal" class="modal-label">
                         <i class="fa-solid fa-cart-shopping"></i>
                         Tickets, $15 per person
                     </label>
-                    <input type="text" class="modal-input" placeholder="How many?">
-                    <label for="" class="modal-label">
+                    <input type="text" class="modal-input" placeholder="How many?" id="tickets-modal">
+                    <label for="email-modal" class="modal-label">
                         <i class="fa-solid fa-user"></i>
                         Send To
                     </label>
-                    <input type="email" class="modal-input" placeholder="Enter email">
+                    <input type="email" class="modal-input" placeholder="Enter email" id="email-modal">
                     <button class="modal-button">Pay 
                         <i class="fa-solid fa-check"></i>
                     </button>
@@ -156,5 +157,6 @@
             </div>
         </div>     
     </div>
+    <script src="./assests/scrip.js"></script>
 </body>
 </html>
