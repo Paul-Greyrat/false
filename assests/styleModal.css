@@ -94,3 +94,20 @@
         opacity: 1;
     }
 }
+/* common */
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+
+}
+.col-half{
+    width: 50%;
+}
+.col-full{
+    width: 100%;
+}
