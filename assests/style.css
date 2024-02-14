@@ -7,6 +7,54 @@
 html{
     font-family: Helvetica;
 }
+/* common */
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+
+}
+.col-half{
+    width: 50%;
+}
+.col-full{
+    width: 100%;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.btn{
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+    border: none;
+}
+
+.btn:hover{
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+
+}
+
+.pull-right{
+    float: right !important;
+}
+.mt-8{
+  margin-top: 8px;  
+}
+.mt-16px{
+    margin-top: 16px;
+}
 
 .text-while{
     color: #fff !important;
@@ -119,7 +167,7 @@ html{
     width: 800px;
     margin-left: auto;
     margin-right: auto;
-    padding: 64px 0;
+    padding: 64px 0 112px;
 }
 .content .section-heading{
     text-align: center;
@@ -200,7 +248,6 @@ html{
 }
 .place-list{
     margin: 32px -8px 0;
-    padding-bottom: 48px;
 
 .place-item{
     float: left;
@@ -231,16 +278,4 @@ html{
     margin-top: 15px;
     line-height: 1.4;
 }
-.place-buy-btn{
-    color: #fff;
-    background-color: #000;
-    text-decoration: none;
-    padding: 11px 16px;
-    display: inline-block;
-    margin-top: 15px;
-}
-.place-buy-btn:hover{
-    color: #000;
-    background-color: #ccc;
 
-}
