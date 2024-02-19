@@ -63,13 +63,14 @@ html{
     clear: both;
 }
 
-.header{
+#header{
     height: 46px;
     background-color: #000;
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
+    overflow: hidden;
 
 }
 
@@ -127,18 +128,22 @@ html{
     line-height: 38px;
     min-width: 160px;
 }
-
+#mobile-menu-btn,
 .search-btn {
     display: inline-block;
     color: #fff;
-    float: right;
     padding: 0 21px;
     line-height: 46px;
     font-size: 20px;
+    float: right;
 }
 .search-btn:hover{
     background-color: #f44336;
     cursor: pointer;
+}
+#mobile-menu-btn:hover{
+    background-color: #ccc;
+    color: #000;
 }
 
 .slider{
@@ -165,9 +170,10 @@ html{
 
 .content-section{
     width: 800px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding: 64px 0 112px;
+    padding: 64px 16px 112px;
 }
 .content .section-heading{
     text-align: center;
