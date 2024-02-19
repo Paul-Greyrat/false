@@ -14,4 +14,7 @@
     .search-btn{
         display: none;
     }
+    #mobile-menu-btn{
+        display: inline-block;
+    }
 }
